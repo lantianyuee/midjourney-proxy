@@ -3,3 +3,8 @@ mj:
     type: in_memory
     timeout: 30d
   translate-way: null
+  accounts:
+    guild-id: 1183682716256964671
+    channel-id: 1183682716693188630
+    user-token: MTA5MDU2ODk1MDcwMzczODkzMA.GGhJ2Q.2mSyG0yD-1T8Nixz-VdTaJ-puF4Pewco8No46I
+    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
