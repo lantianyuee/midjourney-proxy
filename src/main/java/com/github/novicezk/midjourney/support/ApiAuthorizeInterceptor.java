@@ -18,15 +18,7 @@ public class ApiAuthorizeInterceptor implements HandlerInterceptor {
 
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-		if (CharSequenceUtil.isBlank(this.properties.getApiSecret())) {
-			return true;
-		}
-		String apiSecret = request.getHeader(Constants.API_SECRET_HEADER_NAME);
-		boolean authorized = CharSequenceUtil.equals(apiSecret, this.properties.getApiSecret());
-		if (!authorized) {
-			response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
-		}
-		return authorized;
+		return true;
 	}
 
 }
